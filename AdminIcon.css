@@ -1,0 +1,12 @@
+.icons{
+ display: inline-block;
+ position: absolute;
+ top: 0px;
+ left:1300px;
+}
+
+.color{
+    width: 10px;
+    height: 10px;
+    background-color: blue;
+}

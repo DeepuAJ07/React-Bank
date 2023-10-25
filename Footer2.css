@@ -1,0 +1,52 @@
+.FooterPage{
+   
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    min-height: 700px;
+    top: 10px;
+}
+.div1{
+    
+    display: inline-block;
+    position: relative;
+    left:120px;
+    top: 100px;
+    background-color: black;
+}
+.div2{
+    display:inline-block;
+    position:relative;
+    left:100px;
+    top:100px;
+    background-color: black;
+}
+.div3{
+    display:inline-block;
+    position:relative;
+    left:100px;
+    top:100px;
+    background-color: black;  
+}
+.div4{
+    display:inline-block;
+    position:relative;
+    left:100px;
+    top:100px;
+    background-color: black;
+}
+
+.FooterPage li{
+    padding: 20px;
+}
+
+.icons{
+
+    
+    width: 100%;
+    min-height: 100px;
+    display: inline-block;
+    position: relative;
+    left: 960px;
+    top:70px;
+}

@@ -1,0 +1,49 @@
+.AcntPage{
+    width: 300px;
+    padding: 20px;
+  background-color: white;
+    margin: 0 auto;
+    margin-top: 100px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+
+}
+
+.AcntPage label{
+    display: inherit;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.AcntPage button{
+    padding: 8px;
+    background-color:blue;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.AcntPage button:hover{
+    background-color: #45a049;
+}
+
+.AcntPage p{
+    font-weight: bold;
+    color: black;
+}
+
+h3{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.AcntPage input{
+   
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+

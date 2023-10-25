@@ -1,0 +1,14 @@
+.BankPage{
+ background-image: url("https://cdn.wallpapersafari.com/49/62/ZRxm8D.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.log{ 
+  background-color: black;
+  display: inline-block;
+  position: relative;
+  top: 0px;
+left:1150px;
+
+}

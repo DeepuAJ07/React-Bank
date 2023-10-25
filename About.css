@@ -1,0 +1,22 @@
+
+  
+  .AboutPage {
+    width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  p{
+    font-weight: bold;
+  }
+ 
+ 
+
+  
+  section#about {
+    padding: 40px 0;
+    background-color: #fff;
+  }
+  
+
+  

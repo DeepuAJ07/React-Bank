@@ -1,0 +1,15 @@
+
+
+.details{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   background-color: white;
+}
+
+.Customer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}

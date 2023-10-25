@@ -1,0 +1,64 @@
+
+
+.Loginbtn:hover{
+    background-color: green;
+    color: red;
+} 
+
+b{
+  color: white;
+}
+
+.Login{
+    width: 300px;
+    padding: 20px;
+  background-color: black;
+    margin: 0 auto;
+    margin-top: 100px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: red;
+  }
+
+
+
+  .Login label {
+    display: inherit;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .LoginInput{
+  
+    padding: 8px;
+    border: 1px solid #eb0606;
+    background-color: aqua;
+    border-radius: 3px;
+  }
+
+  .Loginbtn {
+  
+    padding: 8px;
+    background-color:rgb(240, 18, 10);
+    border: none;
+    color:green;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+
+
+
+  
+
+
+
+
+ 
+
+

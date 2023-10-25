@@ -1,0 +1,45 @@
+
+
+    .Savings {
+    
+      width: 300px;
+      padding: 20px;
+      background-color: #fff;
+      margin: 0 auto;
+      margin-top: 100px;
+      border-radius: 5px;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+      
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    
+
+   
+
+    .Savings input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    .Savings button {
+      width: 100%;
+      padding: 8px;
+      background-color:red;
+      border: none;
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 3px;
+    }
+
+    .Savings button:hover {
+      background-color: #45a049;
+    }
+
