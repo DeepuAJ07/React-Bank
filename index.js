@@ -1,18 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+var express = require("express")
+var route = require("./Route.js")
+var db = require("./dbcollection.js")
+var parser = require("body-parser")
+let cors=require('cors')
 
-
-
-
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
- <React.StrictMode>
-    <App />
- </React.StrictMode>
-  
-  
-);
-
+var app = express()
+app.use(cors())
+app.use(parser.json())
+app.use("/",route)
+app.listen(4500)

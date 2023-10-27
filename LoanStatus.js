@@ -1,50 +1,38 @@
-import axios from 'axios'
-import React, { useState } from 'react'
-import Home2 from './Home2'
-const Cus_Id=localStorage.getItem('C_id')
-// import './LoanStatus.css'
-
-function LoanStatus() {
-const[Email,setEmail]=useState("")
-const[Amount,setAmount]=useState(0)
-const[msg,setmsg]=useState("")
-
-const subfn=(e)=>{
-    e.preventDefault()
-    let Send = {
-      Email:Email
-    }
-    axios.post("http://localhost:4500/LoanStatus",Send).then((Status)=>{
-   console.log(Status);
-if(Status.data.Status===200){
-  console.log(Status);
-  setmsg(Status.data.msg)
-setAmount(Status.data.Data.Amount)
-}
-else if(Status.data.Status===400){
-  setmsg(Status.data.msg)
-  
-}else{
-  setmsg('Loan request rejected')
-}
-  }).catch((Err)=>{
-        console.log(Err,"Error");
-    })
-}
-
-  return (
-    <div >
-      <Home2/>
-        <form onSubmit={subfn}>
-            <input className='RegisIpt' type='email'placeholder='Type your ID' onChange={(e)=>{setEmail(e.target.value)}}></input>
-            <button className='Regisbtn' type='submit'>Submit</button>
-        </form>
-        <h2>{msg}</h2>
-        <h2>{Amount}</h2>
-
-    </div>
-  )
-}
+let Schema = require("./bankSchema")
 
 
-export default LoanStatus
+    const loanStatus = 
+        (req,res)=>{
+        Schema.findOneAndUpdate({Email:req.body.Email},{eligibility:true}).populate('C_id').exec().then((LoanStatus)=>{
+            console.log(LoanStatus);
+          let Bal = LoanStatus.C_id.Amount
+        
+            if(Bal>=20000 && LoanStatus.eligibility===true){
+                res.json({
+       
+                     Status:200,
+                    msg:"Loan Accepted",
+                    Data:LoanStatus
+                })
+               }else if(Bal<20000 ){
+           
+                res.json({
+                    Status:400,
+                    msg: "Not enough balance ",
+                    Data:LoanStatus
+                })
+               }
+          
+           
+        //    }
+   
+          
+        }).catch((Err)=>{
+            res.send(Err)
+
+        })
+        }
+
+
+
+module.exports={loanStatus}
